@@ -298,3 +298,13 @@
   border-radius: 8px;
   opacity: 0.9;
 }
+
+.verify-inline { font-size: 0.8em; white-space: nowrap; opacity: 0.85; }
+.bank-table td { vertical-align: top; }
+@media (max-width: 640px) {
+  .bank-table td::before { font-weight: 600; display: block; }
+  .bank-table td:nth-child(2)::before { content: "App"; }
+  .bank-table td:nth-child(3)::before { content: "Foreigners"; }
+  .bank-table td:nth-child(4)::before { content: "Source"; }
+}
+.bank-table td, .bank-table td:not(.dns-data) { white-space: normal; overflow-wrap: anywhere; }
