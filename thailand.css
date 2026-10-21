@@ -319,3 +319,5 @@
 .bank-src { font-size: 0.82rem !important; opacity: 0.85; margin-top: auto !important; padding-top: 8px; }
 .verify-badge { display: inline-block; margin-left: 6px; font-size: 0.72rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; vertical-align: middle; white-space: nowrap; }
 @media (max-width: 700px) { .bank-grid { grid-template-columns: 1fr; } }
+
+.card-actions { margin: 16px 0 6px; }
