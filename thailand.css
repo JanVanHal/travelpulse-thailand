@@ -308,3 +308,14 @@
   .bank-table td:nth-child(4)::before { content: "Source"; }
 }
 .bank-table td, .bank-table td:not(.dns-data) { white-space: normal; overflow-wrap: anywhere; }
+
+/* Bank comparison cards */
+.bank-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin: 20px 0; }
+.bank-card { font-family: inherit; border: 1px solid rgba(127,127,127,0.25); border-radius: 12px; padding: 18px 20px; background: var(--nt-surface, #fff); display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.bank-card .bank-name { margin: 0; font-size: 1.1rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bank-card p { margin: 0; font-size: 0.95rem; line-height: 1.55; overflow-wrap: break-word; }
+.bank-pill { display: inline-block; font-size: 0.8rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; background: rgba(37,99,235,0.08); color: inherit; }
+.bank-label { font-size: 0.75rem !important; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.6; margin-top: 6px !important; }
+.bank-src { font-size: 0.82rem !important; opacity: 0.85; margin-top: auto !important; padding-top: 8px; }
+.verify-badge { display: inline-block; margin-left: 6px; font-size: 0.72rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; vertical-align: middle; white-space: nowrap; }
+@media (max-width: 700px) { .bank-grid { grid-template-columns: 1fr; } }
